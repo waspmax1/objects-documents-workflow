@@ -10,7 +10,7 @@ class ObjectsDocumentsWorkflowServiceProvider extends ServiceProvider
     {
         $this->publishes([
             __DIR__.'/config/objectsDocumentsWorkflow.php' => config_path('objectsDocumentsWorkflow.php'),
-        ]);
+        ], 'config');
 
         $this->loadRoutesFrom(__DIR__.'/routes.php');
 
